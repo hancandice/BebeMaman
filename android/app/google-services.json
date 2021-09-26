@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "743656679439",
+    "project_id": "bebemaman-inc",
+    "storage_bucket": "bebemaman-inc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743656679439:android:daba0ff8da213092801b7a",
+        "android_client_info": {
+          "package_name": "com.bebemaman"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743656679439-5efvq7jrs7m39sb84r2jnv2e73iqcko7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bebemaman",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "743656679439-5c68smk6fh73guj6kumli9l1038bs977.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2L2BxF2CL9HEpIm2UvZ6T9yYmlvC0sJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743656679439-5c68smk6fh73guj6kumli9l1038bs977.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
