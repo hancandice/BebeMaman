@@ -20,6 +20,9 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
+project.xcworkspace
+
+package-lock.json
 
 # Android/IntelliJ
 #
@@ -57,3 +60,4 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+iOS-certificates/
