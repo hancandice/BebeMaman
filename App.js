@@ -1,8 +1,18 @@
 import React from 'react';
-import {AppRegistry, Text} from 'react-native';
+import {AppRegistry} from 'react-native';
+import {Provider} from 'react-redux';
+import {AppNavigator} from './src/navigations/AppNavigation';
+import configureStore from './src/redux/store/index';
 
-const App = props => {
-  return <Text>React Native App</Text>;
+const MainNavigator = AppNavigator;
+const store = configureStore();
+const hello = 'hello';
+const App = () => {
+  return (
+    <Provider store={store}>
+      <MainNavigator screenProps={{hello}} />
+    </Provider>
+  );
 };
 
 App.propTypes = {};

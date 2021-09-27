@@ -14,8 +14,15 @@
     "@react-navigation/native-stack": "^6.2.1",
     "react": "17.0.2",
     "react-native": "0.65.1",
+    "react-native-gesture-handler": "^1.10.3",
     "react-native-safe-area-context": "^3.3.2",
-    "react-native-screens": "^3.7.2"
+    "react-native-screens": "^3.7.2",
+    "react-navigation": "^4.4.4",
+    "react-navigation-redux-helpers": "^4.0.1",
+    "react-redux": "^7.2.5",
+    "redux": "^4.1.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
