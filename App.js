@@ -1,16 +1,27 @@
-import React from 'react';
-import {AppRegistry} from 'react-native';
+import {ThemeProvider} from '@react-navigation/native';
+import React, {useEffect, useState} from 'react';
+import {Appearance, AppRegistry} from 'react-native';
 import {Provider} from 'react-redux';
 import {AppNavigator} from './src/navigations/AppNavigation';
 import configureStore from './src/redux/store/index';
 
 const MainNavigator = AppNavigator;
 const store = configureStore();
-const hello = 'hello';
+
 const App = () => {
+  const [colorScheme, setColorScheme] = useState(Appearance.getColorScheme());
+  useEffect(() => {
+    Appearance.addChangeListener(({colorScheme}) => {
+      setColorScheme(colorScheme);
+    });
+    return () => {};
+  }, []);
+
   return (
     <Provider store={store}>
-      <MainNavigator screenProps={{hello}} />
+      <ThemeProvider theme={colorScheme}>
+        <MainNavigator screenProps={{theme: colorScheme}} />
+      </ThemeProvider>
     </Provider>
   );
 };
