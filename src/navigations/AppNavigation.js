@@ -5,6 +5,8 @@ import {
 } from 'react-navigation-redux-helpers';
 import {createStackNavigator} from 'react-navigation-stack';
 import {connect} from 'react-redux';
+import BebemamanConfig from '../BebemamanConfig';
+import DynamicAppStyles from '../DynamicAppStyles';
 import LoadScreen from '../Core/onboarding/LoadScreen/LoadScreen';
 import WalkthroughScreen from '../Core/onboarding/WalkthroughScreen/WalkthroughScreen';
 import WelcomeScreen from '../Core/onboarding/WelcomeScreen/WelcomeScreen';
@@ -20,8 +22,8 @@ const LoginStack = createStackNavigator(
   {
     initialRouteName: 'Welcome',
     initialRouteParams: {
-      appStyles: 'DynamicAppStyle',
-      appConfig: 'BebemamanConfig',
+      appStyles: DynamicAppStyles,
+      appConfig: BebemamanConfig,
     },
     headerMode: 'none',
   },
@@ -37,8 +39,8 @@ const RootNavigator = createSwitchNavigator(
   {
     initialRouteName: 'LoadScreen',
     initialRouteParams: {
-      appStyles: 'DynamicAppStyle',
-      appConfig: 'BebemamanConfig',
+      appStyles: DynamicAppStyles,
+      appConfig: BebemamanConfig,
     },
   },
 );
