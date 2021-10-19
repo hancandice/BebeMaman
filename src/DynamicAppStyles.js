@@ -6,7 +6,7 @@ const WINDOW_HEIGHT = Dimensions.get('window').height;
 
 const lightColorSet = {
   mainThemeBackgroundColor: '#ffffff',
-  mainThemeForegroundColor: '#eb5a6d',
+  mainThemeForegroundColor: '#b2b86a',
   secondaryForegroundColor: '#f4f6fb',
   hairlineColor: '#d6d6d6',
   mainTextColor: '#464646',
@@ -24,7 +24,7 @@ const lightColorSet = {
 
 const darkColorSet = {
   mainThemeBackgroundColor: invert('#ffffff'),
-  mainThemeForegroundColor: '#eb5a6d',
+  mainThemeForegroundColor: '#b2b86a',
   secondaryForegroundColor: invert('#f4f6fb'),
   mainTextColor: invert('#464646'),
   mainSubtextColor: invert('#7e7e7e'),
@@ -163,7 +163,7 @@ const _styleSet = {
   },
   backArrowStyle: {
     resizeMode: 'contain',
-    tintColor: '#eb5a6d',
+    tintColor: '#b2b86a',
     width: 25,
     height: 25,
     marginTop: Platform.OS === 'ios' ? 50 : 20,
